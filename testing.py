@@ -3,12 +3,12 @@ from discord.ext import commands, tasks
 from datetime import datetime, timedelta
 
 bot = commands.Bot(command_prefix='-', intents = discord.Intents.all())
-status = ["-helpme เพื่อดูวิธีการใช้","พักผ่อนๆ"]
+status = ["-helpme เพื่อดูวิธีการใช้","ขอให้มีความสุขในวันนี้"]
 @bot.command()
 async def helpme(ctx):
     embed1 = discord.Embed(title = "วิธีการใช้งาน",description = "พิมพ์ - ตามด้วยคำสั่งต่างๆ",colour =0x99CCFF)
     embed1.add_field(name = " -ACM ",value=" เพื่อดูคำสั่งทั้งหมด", inline = False)
-    embed1.set_author(name = "Click to join Bot's server",url = 'https://discord.gg/sbE5HrhU')
+    embed1.set_author(name = "Click to join Bot's server",url = 'ลิงค์เซิร์ฟเวอร์ที่ต้องการ')
     await ctx.send(embed = embed1)
 
 @bot.command()
